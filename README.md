@@ -2,6 +2,10 @@
 
 A static HTML/CSS/Vanilla JavaScript redesign based on the supplied ELITE XI redesign specification.
 
+🌐 Live Website: https://shaikirshad6447-oss.github.io/ELITE-XI/
+
+💻 GitHub Repository: https://github.com/shaikirshad6447-oss/ELITE-XI
+
 ## Structure
 - `index.html`
 - `pages/program.html`
