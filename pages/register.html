@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Join Academy — ELITE XI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="../index.html">
+        <span class="brand__badge">XI</span>
+        <span><strong>ELITE XI</strong><small>CRICKET PERFORMANCE ACADEMY</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="program.html">Programs</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <a class="button button--small" href="register.html">Join Academy <span>↗</span></a>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="../index.html">Home</a>
+      <a href="program.html">Programs</a>
+      <a href="coaches.html">Coaches</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="about.html">About Us</a>
+      <a class="button" href="register.html">Join Academy <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="inner-hero">
+      <div class="shell inner-hero__grid">
+        <div>
+          <p class="eyebrow"><span></span> Join Academy / Trial registration</p>
+          <h1>START YOUR<br><em>ELITE XI JOURNEY.</em></h1>
+        </div>
+        <p class="inner-hero__copy">Tell us about the player, the goals and the pathway you are looking for.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell register-grid">
+        <div class="register-photo reveal">
+          <img src="../assets/images/cricket-hero.jpg" alt="Cricket batter preparing to play">
+        </div>
+        <div class="register-copy">
+          <p class="eyebrow"><span></span> Player registration</p>
+          <h2 style="font:800 clamp(40px,5vw,66px)/1 Manrope;letter-spacing:-.05em;margin:0 0 18px">Tell us about<br><em style="color:var(--teal);font-style:normal">the player.</em></h2>
+          <p style="color:var(--muted);max-width:600px;margin-bottom:30px">Complete the form below and the academy team can understand the player's goals, experience and preferred pathway.</p>
+          
+          <form id="academy-form" class="form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" autocomplete="name" required>
+                <span class="error">Please enter a name.</span>
+              </div>
+              <div class="field">
+                <label for="dob">Date of Birth *</label>
+                <input id="dob" type="date" name="dob" required>
+                <span class="error">Please select a date.</span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone *</label>
+                <input id="phone" type="tel" name="phone" autocomplete="tel" required>
+                <span class="error">Please enter a phone number.</span>
+              </div>
+              <div class="field">
+                <label for="email">Email *</label>
+                <input id="email" type="email" name="email" autocomplete="email" required>
+                <span class="error">Please enter an email.</span>
+              </div>
+              <div class="field">
+                <label for="guardian">Parent / Guardian</label>
+                <input id="guardian" name="guardian">
+              </div>
+              <div class="field">
+                <label for="role">Playing Role *</label>
+                <select id="role" name="role" required>
+                  <option value="">Select role</option>
+                  <option>Batter</option>
+                  <option>Bowler</option>
+                  <option>All-rounder</option>
+                  <option>Wicketkeeper</option>
+                </select>
+                <span class="error">Please select a role.</span>
+              </div>
+              <div class="field">
+                <label for="batting">Batting Style</label>
+                <select id="batting" name="batting">
+                  <option>Not specified</option>
+                  <option>Right-hand</option>
+                  <option>Left-hand</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="bowling">Bowling Style</label>
+                <select id="bowling" name="bowling">
+                  <option>Not specified</option>
+                  <option>Right-arm pace</option>
+                  <option>Left-arm pace</option>
+                  <option>Right-arm spin</option>
+                  <option>Left-arm spin</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="experience">Experience Level *</label>
+                <select id="experience" name="experience" required>
+                  <option value="">Select level</option>
+                  <option>Beginner</option>
+                  <option>Developing</option>
+                  <option>Competitive</option>
+                  <option>Advanced</option>
+                </select>
+                <span class="error">Please select a level.</span>
+              </div>
+              <div class="field">
+                <label for="program">Target Program *</label>
+                <select id="program" name="program" required>
+                  <option value="">Select program</option>
+                  <option>Junior Foundation</option>
+                  <option>Youth Competitive</option>
+                  <option>Elite Pro Squad</option>
+                  <option>Specialized Labs</option>
+                </select>
+                <span class="error">Please select a program.</span>
+              </div>
+              <div class="field">
+                <label for="slot">Preferred Training Slot</label>
+                <select id="slot" name="slot">
+                  <option>Morning</option>
+                  <option>Afternoon</option>
+                  <option>Evening</option>
+                  <option>Flexible</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="trial">Trial Date *</label>
+                <input id="trial" type="date" name="trial" required>
+                <span class="error">Please select a trial date.</span>
+              </div>
+              <div class="field field--full">
+                <label for="notes">Anything else we should know?</label>
+                <textarea id="notes" name="notes" placeholder="Goals, current level, competition experience..."></textarea>
+              </div>
+            </div>
+            <p class="form-note">By submitting, you are requesting an academy trial. This static demo does not send data to a server.</p>
+            <button class="button" type="submit">Request a trial <span>↗</span></button>
+            <div id="success" class="success" role="status" aria-live="polite">
+              <strong>Request received.</strong><br>Your details have been captured for this demonstration. The academy team can follow up with the selected program and trial date.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer__top">
+      <div>
+        <a class="brand brand--footer" href="../index.html">
+          <span class="brand__badge">XI</span>
+          <span><strong>ELITE XI</strong><small>CRICKET PERFORMANCE ACADEMY</small></span>
+        </a>
+        <p>Performance cricket, developed with purpose.</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <strong>Explore</strong>
+          <a href="../index.html">Home</a>
+          <a href="program.html">Programs</a>
+          <a href="coaches.html">Coaches</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="about.html">About</a>
+        </div>
+        <div>
+          <strong>Start</strong>
+          <a href="register.html">Join Academy</a>
+          <a href="register.html">Book a trial</a>
+          <span>Mon–Sat / 06:00–20:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="shell footer__bottom">
+      <span>© 2026 ELITE XI Cricket Performance Academy</span>
+      <span>Built for the next level.</span>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+</body>
+</html>
